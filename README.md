@@ -1,10 +1,10 @@
-# acsui-web-part
+# spfx-acs-ui-extension
 
 ## Summary
 
-Short summary on functionality and used technologies.
+Sample SPFx extension to reproduce the error in Control Buttons of ACS UI Library.
 
-[picture of the solution in action, if possible]
+<img width="406" alt="ControlButtonError" src="https://user-images.githubusercontent.com/33526902/149486714-2d10f7d2-a6fd-4bb2-870d-8fe1477f5fa1.png">
 
 ## Used SharePoint Framework Version
 
@@ -17,52 +17,44 @@ Short summary on functionality and used technologies.
 
 > Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
 
-## Prerequisites
 
-> Any special pre-requisites?
+## Minimal Path to Awesome
+
+For debugging and running locally:
+- Clone this repository
+- Ensure that you are at the solution folder
+- in the command-line run:
+  - **npm install**
+  - **gulp serve --nobrowser**
+- Open your SharePoint developer site and append the provided query string parameters from the command output
+
+For running the final packaged version.
+- Clone this repository
+- Ensure that you are at the solution folder
+- in the command-line run:
+  - **npm install**
+  - **gulp bundle --ship**
+  - **gulp package-solution --ship**
+- Upload the `.sppkg` app package file to the SharePoint App Catalog
+- Install the app to a SharePoint Site and go to any SharePoint page within that site
 
 ## Solution
 
 Solution|Author(s)
 --------|---------
-folder name | Author details (name, company, twitter alias with link)
+acsui-web-part-client-side-solution | Aakash Bhardwaj
 
 ## Version history
 
 Version|Date|Comments
 -------|----|--------
-1.1|March 10, 2021|Update comment
-1.0|January 29, 2021|Initial release
+1.0|January 14, 2022|Initial release
 
 ## Disclaimer
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
 ---
-
-## Minimal Path to Awesome
-
-- Clone this repository
-- Ensure that you are at the solution folder
-- in the command-line run:
-  - **npm install**
-  - **gulp serve**
-
-> Include any additional steps as needed.
-
-## Features
-
-Description of the extension that expands upon high-level summary above.
-
-This extension illustrates the following concepts:
-
-- topic 1
-- topic 2
-- topic 3
-
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
-
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
 
 ## References
 
